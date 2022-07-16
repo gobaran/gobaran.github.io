@@ -12,29 +12,42 @@
             margin: 0;
             height: 100%;
         }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         .main {
-            margin: 0;
-            height: 100%;
-            width: 100%;
-            display: table;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
         }
         .wrapper {
-            width: 50%;
+            width: 100%;
             margin: 0 auto;
             font-family: Nirmala;
             text-align: center;
+        }
+        .head {
+            font-size: 40px;
+            font-weight: bolder;
+        }
+        .foot {
+            font-size: 30px;
+            font-weight: bold;
         }
     </style>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
     <div class = "main">
-        <lottie-player class="wrapper" src="assets/hero.json" background="transparent"  speed="1" style="width: 200px; height: 200px;" loop autoplay></lottie-player>
-        <div class = "wrapper">
+        <lottie-player class="wrapper" src="assets/hero.json" background="transparent"  speed="1" style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+        <div class = "wrapper head">
             Coming Soon
         </div>
         <lottie-player class="wrapper" src="assets/loading.json" background="transparent"  speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
-        <div class = "wrapper">
+        <div class = "wrapper foot">
             Stay Tuned
         </div>
     </div>
