@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'Nirmala';
+            src: url('fonts/Nirmala.ttf')  format('truetype'); /* Safari, Android, iOS */
+        }
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+        .main {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            display: table;
+        }
+        .wrapper {
+            width: 50%;
+            margin: 0 auto;
+            font-family: Nirmala;
+            text-align: center;
+        }
+    </style>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <div class = "main">
+        <lottie-player class="wrapper" src="assets/hero.json" background="transparent"  speed="1" style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+        <div class = "wrapper">
+            Coming Soon
+        </div>
+        <lottie-player class="wrapper" src="assets/loading.json" background="transparent"  speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+        <div class = "wrapper">
+            Stay Tuned
+        </div>
+    </div>
+</body>
+</html>
